@@ -1,5 +1,5 @@
-const divide = require('../divide');
+const division = require('../division');
 
-test('divide 2 divided by  2 to equal 1', () => {
-    expect(divide(2, 2)).toBe(1);
+test('divides 1 / 2 to equal 0.5', () => {
+    expect(division.divide(1, 2)).toBe(0.5);
 });
