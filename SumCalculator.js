@@ -1,0 +1,4 @@
+
+class SumCalculator extends Calculator {
+
+}

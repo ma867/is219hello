@@ -48,5 +48,7 @@ class Calculator{
 
 module.exports = Calculator;
 ```
-
-
+### Inheritance:
+Just as the word says inheritances is the concept that an extended class, or child class, of a class, or parent class can inherit the properties or methods from its parent class. Its purpose is to make code safe for reuse and to provide an understandable hierarchy for code
+```
+```
