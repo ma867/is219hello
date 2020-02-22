@@ -13,42 +13,34 @@ const MathOperations = require('./MathOperations.js');
 
 class Calculator{
     add(a = null, b = null) {
-        if (Array.isArray(a)) {
-            return this.result = MathOperations.sum(a);
-
-        } else {
-            return this.result = MathOperations.sum(a, b);
-        }
+        ...
     }
 
     divide(a = null,b = null){
-        return this.result = MathOperations.quotient(a,b)
+        ...
     }
 
     multiply(a = null,b = null){
-        return this.result = MathOperations.product(a,b)
-    }
+        ...
+   }
+    ....
 
-    subtract(a,b){
-        return this.result = MathOperations.subtract(a,b)
-    }
-
-    square(a){
-        return this.result = MathOperations.square(a)
-    }
-
-    squareRoot(a){
-        return this.result = MathOperations.squareRoot(a)
-    }
-
-    sumList(array){
-        return this.result = MathOperations.sumList(array)
-    }
 }
 
 module.exports = Calculator;
 ```
 ### Inheritance:
-Just as the word says inheritances is the concept that an extended class, or child class, of a class, or parent class can inherit the properties or methods from its parent class. Its purpose is to make code safe for reuse and to provide an understandable hierarchy for code
+Just as the word says inheritances is the concept that an extended class, or child class, of a class, or parent class can inherit the properties or methods from its parent class. Its purpose is to make code safe for reuse and to provide an understandable hierarchy for code. For example, we could create a class called SumCalculator that inherits sum methds from the parent class, Calculator.
 ```
+class SumCalculator extends Calculator {
+    ...
+}
 ```
+
+### Polymorphism:
+This is the idea that an object can take on any forms. This means that a child class object can be treated the same way as any other class in the parent hierarchy. For example, a new SumCalculator object can become a new Calculator object and viceversa.
+```
+SumCalculator mycalc = new Calculator();
+```
+### Abstraction:
+Abstraction allows us to select data from a larger pool to show only the relevant details to the object. It helps us reduc the complexity of the code
