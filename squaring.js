@@ -5,4 +5,4 @@ class squaring {
         return result;
     }
 }
-module.exports = squaring; //exports sum out of the local scop makes it global so that test can see it.
+module.exports = squaring;

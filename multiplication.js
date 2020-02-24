@@ -6,4 +6,4 @@ class multiplication{
         return result;
     }
 }
-module.exports = multiplication; //exports sum out of the local scop makes it global so that test can see it.
+module.exports = multiplication;
