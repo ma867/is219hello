@@ -13,4 +13,4 @@ class addition{
     }
 }
 
-module.exports = addition; 
+module.exports = addition;
