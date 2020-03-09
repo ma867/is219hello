@@ -12,12 +12,12 @@ class City {
 
     }
 
-   /* static createCity(city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id){
+    /*static createCity(city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id){
         return new City(city,city_ascii,lat,lng,country,iso2,iso3,admin_name,capital,population,id);
     }*/
 
     static createCity(cityArray){
         return new City(cityArray[0],cityArray[1],cityArray[2],cityArray[3],cityArray[4],cityArray[5],cityArray[6],cityArray[7], cityArray[8]);
-    }
+  }
 }
 module.exports = City;

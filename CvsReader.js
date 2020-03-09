@@ -10,7 +10,6 @@ class CvsReader{
 
     static readCSVAndParse(csvFile){
         const output = []
-
        // fs.createReadStream(csvFile)
             this.openStream(csvFile)
             .pipe(parse({
