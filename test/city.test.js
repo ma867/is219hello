@@ -1,4 +1,4 @@
-const City = require('../models/city.js')
+const City = require('C:\\Users\\MAlzate\\WebstormProjects\\is219hello\\models\\city.js')
 
 test('Can create a city object', () => {
     let city = new City();
