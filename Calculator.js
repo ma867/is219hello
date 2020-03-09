@@ -34,10 +34,6 @@ class Calculator{
         return this.result = MathOperations.sumList(array)
     }
 
-
-
-
-
 }
 
 module.exports = Calculator;
