@@ -20,11 +20,12 @@ class CvsReader{
                     }
                 })
                 // When we are done, test that the parsed output matched what expected
-                .on('end', function(){
+                //.on('end', function(){
 
-                    console.log(output);
+                //    console.log(output);
 
-                }));
+                //})
+);
 
 
     }
@@ -32,12 +33,6 @@ class CvsReader{
 
 }
 module.exports = CvsReader;
-
-let poop = 'data/WorldCitiesShortList.csv';
-let newShit = [];
-newShit = CvsReader.readCSVAndParse(poop);
-
-console.log(newShit);
 
 
 
