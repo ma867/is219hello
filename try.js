@@ -2,13 +2,12 @@ const parse = require('csv-parse')
 const fs = require('fs');
 let output = [];
 const City = require('./models/city');
-
-
+const csvfuntions = require('./CvsReader');
 let csvFile = 'data/WorldCitiesShortList.csv';
 
 
 
-fs.createReadStream(csvFile)
+csvfuntions.openStream(csvFile)
     .pipe(parse({
         delimiter: ',',
         trim: true,
@@ -20,8 +19,8 @@ fs.createReadStream(csvFile)
                 //output.push(record)
                 //console.log(record[0], );
                let city = City.createCity(record);
-               //console.log(city);
-               output.push(city);
+               console.log(city);
+               //output.push(city);
               //  this.myoutput.push(record)
 
             }
