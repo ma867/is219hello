@@ -1,6 +1,6 @@
 const parse = require('csv-parse');
 const fs = require('fs');
-const cityModel = require('./models/city');
+const cityModel = require('./models/City');
 
 class CsvReader{
 
