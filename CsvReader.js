@@ -1,7 +1,8 @@
 const parse = require('csv-parse');
 const fs = require('fs');
-const cityModel = require('./models/city')
-class CvsReader{
+const cityModel = require('./models/city.js');
+
+class CsvReader{
 
     static openStream(csvFile){
       let openFile =  fs.createReadStream(csvFile);
@@ -38,7 +39,7 @@ class CvsReader{
 
 
 }
-module.exports = CvsReader;
+module.exports = CsvReader;
 
 
 
